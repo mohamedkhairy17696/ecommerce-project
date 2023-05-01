@@ -1,1 +1,1 @@
-# ecommerce-projectr
+# ecommerce-project
