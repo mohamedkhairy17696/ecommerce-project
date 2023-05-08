@@ -83,6 +83,8 @@ const CartMenu = () => {
                       </IconButton>
                     </FlexBox>
                     <Typography>{item.attributes.shortDescription}</Typography>
+
+                    {/* Amount */}
                     <FlexBox m="15px 0">
                       <Box
                         display="flex"
@@ -105,6 +107,7 @@ const CartMenu = () => {
                           <AddIcon />
                         </IconButton>
                       </Box>
+
                       {/* Price */}
                       <Typography fontWeight="bold">
                         ${item.attributes.price}
