@@ -1,5 +1,3 @@
-import React from "react";
-
 const Checout = () => {
   return <div>Checout</div>;
 };
