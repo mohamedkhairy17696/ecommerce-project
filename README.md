@@ -1,4 +1,3 @@
-# ecommerce-project-React-RTK-Strapi backend-Stripe payment
 Features
 - React for frontend
 - Strapi for backend
