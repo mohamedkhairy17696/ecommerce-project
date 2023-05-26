@@ -116,7 +116,18 @@ const Checout = () => {
             handleSubmit,
             setFieldValue,
           }) => (
-            <form onSubmit={handleSubmit}>{isFirstStep && <Shipping />}</form>
+            <form onSubmit={handleSubmit}>
+              {isFirstStep && (
+                <Shipping
+                  values={values}
+                  errors={errors}
+                  touched={touched}
+                  handleBlur={handleBlur}
+                  handleChange={handleChange}
+                  setFieldValue={setFieldValue}
+                />
+              )}
+            </form>
           )}
         </Formik>
       </Box>
