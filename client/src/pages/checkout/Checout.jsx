@@ -134,6 +134,7 @@ const Checout = () => {
       sessionId: session.id,
     });
   }
+
   return (
     <Box width="80%" m="100px auto">
       <Stepper activeStep={activeStep} sx={{ m: "20px 0" }}>
@@ -207,7 +208,6 @@ const Checout = () => {
                     borderRadius: 0,
                     padding: "15px 40px",
                   }}
-                  onClick={() => setActiveStep(activeStep - 1)}
                 >
                   {isFirstStep ? "Next" : "Place Order"}
                 </Button>
