@@ -15,6 +15,7 @@ const importAll = (r) =>
 export const heroTextureImports = importAll(
   require.context("../../assets/imgs", false, /\.(png|jpe?g|svg)$/)
 );
+
 const MainCarousel = () => {
   const isNonMobile = useMediaQuery("min-width:600px");
   return (
@@ -23,7 +24,7 @@ const MainCarousel = () => {
       showThumbs={false}
       showIndicators={false}
       showStatus={false}
-      renderArrowPrev={(onClickHandler, hasPrev, label) => (
+      renderArrowPrev={(onClickHandler) => (
         <IconButton
           onClick={onClickHandler}
           sx={{
